@@ -1,0 +1,85 @@
+@import "colors/gruvbox.css";
+* {
+    font-family: "JetbrainsMono Nerd Font";
+    font-size: 18px;
+}
+window#waybar {
+    background: linear-gradient(180deg, @bg0-hard, @bg1);
+    border: solid 3px @bg0-hard;
+}
+#window {
+    color: @fg2;
+    margin: 5px 0px;
+    padding: 0 10px;
+}
+#waybar.empty #window {
+    border: none;
+    background: none;
+}
+button {
+    border: none;
+    border-radius: 0;
+}
+button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: inherit;
+}
+tooltip {
+    color: @fg4;
+    background-color: @bg0-hard;
+}
+#workspaces button {
+	color: @fg4;
+	padding: 0px 8px;
+}
+#workspaces button.active {
+	color: @fg4;
+    background: @bg0-hard;
+    border-radius: 10;
+}
+#workspaces button.urgent {
+	color: @red;
+}
+#mpris,
+#custom-power,
+#custom-updates,
+#tray,
+#pulseaudio,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#power-profiles-daemon,
+#network {
+    color: @fg4;
+    padding: 0px 10px;
+}
+#pulseaudio.muted {
+	color: @red;
+}
+#temperature.warning {
+    color: @orange;
+}
+#temperature.critical {
+    color: @red;
+}
+#custom-updates.updates {
+    color: @green;
+}
+#network.wifi {
+	color: @blue;
+}
+#network.ethernet {
+	color: @green;
+}
+#network.disconnected {
+	color: @red;
+}
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0px;
+}
+.modules-right > widget:last-child > #custom-power {
+    margin-right: 10px;
+}
+
