@@ -1,2 +1,2 @@
 # hyprland-dotfiles
-switched over to mango because of lua
+switched over to mangowm because of hyprlua, these dots wont be maintained
